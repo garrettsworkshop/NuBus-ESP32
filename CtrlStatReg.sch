@@ -1,0 +1,648 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 8
+Title "NuBus-ESP32"
+Date "2021-11-18"
+Rev "0.1"
+Comp "Garrett's Workshop"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Notes Line
+	1000 5400 1900 5400
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61A765AC
+P 9150 5000
+AR Path="/61A765AC" Ref="#PWR?"  Part="1" 
+AR Path="/64084316/61A765AC" Ref="#PWR?"  Part="1" 
+AR Path="/61CA157A/61A765AC" Ref="#PWR0213"  Part="1" 
+F 0 "#PWR0213" H 9150 4850 50  0001 C CNN
+F 1 "+3V3" H 9150 5150 50  0000 C CNN
+F 2 "" H 9150 5000 50  0001 C CNN
+F 3 "" H 9150 5000 50  0001 C CNN
+	1    9150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61A765B2
+P 9150 5100
+AR Path="/61A765B2" Ref="C?"  Part="1" 
+AR Path="/64084316/61A765B2" Ref="C?"  Part="1" 
+AR Path="/61CA157A/61A765B2" Ref="C43"  Part="1" 
+F 0 "C43" H 9058 5146 50  0000 R CNN
+F 1 "10u" H 9058 5055 50  0000 R CNN
+F 2 "stdpads:C_0805" H 9150 5100 50  0001 C CNN
+F 3 "~" H 9150 5100 50  0001 C CNN
+	1    9150 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61A765B8
+P 9550 5100
+AR Path="/61A765B8" Ref="C?"  Part="1" 
+AR Path="/64084316/61A765B8" Ref="C?"  Part="1" 
+AR Path="/61CA157A/61A765B8" Ref="C44"  Part="1" 
+F 0 "C44" H 9458 5146 50  0000 R CNN
+F 1 "10u" H 9458 5055 50  0000 R CNN
+F 2 "stdpads:C_0805" H 9550 5100 50  0001 C CNN
+F 3 "~" H 9550 5100 50  0001 C CNN
+	1    9550 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61A765BE
+P 9950 5100
+AR Path="/61A765BE" Ref="C?"  Part="1" 
+AR Path="/64084316/61A765BE" Ref="C?"  Part="1" 
+AR Path="/61CA157A/61A765BE" Ref="C45"  Part="1" 
+F 0 "C45" H 9858 5146 50  0000 R CNN
+F 1 "10u" H 9858 5055 50  0000 R CNN
+F 2 "stdpads:C_0805" H 9950 5100 50  0001 C CNN
+F 3 "~" H 9950 5100 50  0001 C CNN
+	1    9950 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A765C4
+P 9950 5200
+AR Path="/64084316/61A765C4" Ref="#PWR?"  Part="1" 
+AR Path="/61CA157A/61A765C4" Ref="#PWR0214"  Part="1" 
+F 0 "#PWR0214" H 9950 4950 50  0001 C CNN
+F 1 "GND" H 9950 5050 50  0000 C CNN
+F 2 "" H 9950 5200 50  0001 C CNN
+F 3 "" H 9950 5200 50  0001 C CNN
+	1    9950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 5000 9150 5000
+Wire Wire Line
+	9550 5000 9950 5000
+Connection ~ 9550 5000
+Wire Wire Line
+	9950 5200 9550 5200
+Connection ~ 9950 5200
+Connection ~ 9550 5200
+Wire Wire Line
+	9550 5200 9150 5200
+Connection ~ 9150 5000
+Wire Wire Line
+	4050 5100 4150 5100
+Wire Wire Line
+	4150 3300 4050 3300
+Wire Wire Line
+	4450 3050 4650 3050
+Wire Wire Line
+	3850 3050 3550 3050
+Wire Wire Line
+	3750 2350 4850 2350
+Wire Wire Line
+	4850 1450 3550 1450
+Text HLabel 2550 4050 0    50   Input ~ 0
+RDCLK
+Wire Wire Line
+	2550 4050 2950 4050
+Wire Wire Line
+	2950 3750 2950 3950
+Wire Wire Line
+	3250 3750 2950 3750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 682B83B0
+P 3250 3750
+AR Path="/61C6168C/682B83B0" Ref="#PWR?"  Part="1" 
+AR Path="/61CA157A/682B83B0" Ref="#PWR0212"  Part="1" 
+F 0 "#PWR0212" H 3250 3600 50  0001 C CNN
+F 1 "+3V3" H 3250 3900 50  0000 C CNN
+F 2 "" H 3250 3750 50  0001 C CNN
+F 3 "" H 3250 3750 50  0001 C CNN
+	1    3250 3750
+	1    0    0    -1  
+$EndComp
+Text Notes 1050 2300 0    50   ~ 0
+Write request\nfrom Mac to ESP32
+Wire Notes Line
+	1000 3600 1900 3600
+Text Notes 1050 3200 0    50   ~ 0
+Pending bit registered\nfor readback by Mac
+Wire Notes Line
+	1000 2700 1900 2700
+Text Notes 1050 5000 0    50   ~ 0
+Pending bit registered\nfor readback by Mac
+Wire Notes Line
+	1000 4500 1900 4500
+Text Notes 1050 4100 0    50   ~ 0
+Read request\nfrom ESP32 to Mac
+Wire Notes Line
+	1000 1800 1900 1800
+Text Notes 1050 1400 0    50   ~ 0
+ESP32 reset bit
+Wire Notes Line
+	1000 900  1900 900 
+Wire Wire Line
+	2950 2000 2950 2150
+Wire Wire Line
+	2850 2000 2950 2000
+Wire Wire Line
+	4850 4150 3750 4150
+Connection ~ 3750 4150
+Text Label 3850 4850 2    50   ~ 0
+~RDREQ~N
+$Comp
+L power:GND #PWR0210
+U 1 1 679639EB
+P 2850 2000
+F 0 "#PWR0210" H 2850 1750 50  0001 C CNN
+F 1 "GND" H 2850 1850 50  0000 C CNN
+F 2 "" H 2850 2000 50  0001 C CNN
+F 3 "" H 2850 2000 50  0001 C CNN
+	1    2850 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1950 3250 1950
+Text HLabel 4050 3300 0    50   Input ~ 0
+ROM~OE~
+$Comp
+L power:+3V3 #PWR?
+U 1 1 679639E3
+P 2950 3450
+AR Path="/61C6168C/679639E3" Ref="#PWR?"  Part="1" 
+AR Path="/61CA157A/679639E3" Ref="#PWR0209"  Part="1" 
+F 0 "#PWR0209" H 2950 3300 50  0001 C CNN
+F 1 "+3V3" H 2950 3600 50  0000 C CNN
+F 2 "" H 2950 3450 50  0001 C CNN
+F 3 "" H 2950 3450 50  0001 C CNN
+	1    2950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 679639DD
+P 3250 2850
+AR Path="/61C6168C/679639DD" Ref="#PWR?"  Part="1" 
+AR Path="/61CA157A/679639DD" Ref="#PWR0208"  Part="1" 
+F 0 "#PWR0208" H 3250 2700 50  0001 C CNN
+F 1 "+3V3" H 3250 3000 50  0000 C CNN
+F 2 "" H 3250 2850 50  0001 C CNN
+F 3 "" H 3250 2850 50  0001 C CNN
+	1    3250 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3150 2550 3150
+Wire Bus Line
+	4850 3150 4750 3150
+Entry Wire Line
+	4650 3050 4750 3150
+Text HLabel 4850 3150 2    50   BiDi ~ 0
+~AD~[31..0]
+Text Label 4450 3050 0    50   ~ 0
+~AD~22
+Text Label 3850 3050 2    50   ~ 0
+~WRREQ~N
+NoConn ~ 3550 3250
+Wire Wire Line
+	2950 3450 3250 3450
+Wire Wire Line
+	2850 2650 2850 3050
+Wire Wire Line
+	2850 3050 2950 3050
+Wire Wire Line
+	3750 2350 3550 2350
+Connection ~ 3750 2350
+Wire Wire Line
+	3750 2650 2850 2650
+Wire Wire Line
+	3750 2350 3750 2650
+Text HLabel 2550 3150 0    50   Input ~ 0
+CLK
+Text HLabel 2550 1950 0    50   Input ~ 0
+REG~WE~
+Wire Wire Line
+	2550 4350 3250 4350
+Text HLabel 4050 5100 0    50   Input ~ 0
+ROM~OE~
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6219742A
+P 3250 1050
+AR Path="/61C6168C/6219742A" Ref="#PWR?"  Part="1" 
+AR Path="/61CA157A/6219742A" Ref="#PWR0170"  Part="1" 
+F 0 "#PWR0170" H 3250 900 50  0001 C CNN
+F 1 "+3V3" H 3250 1200 50  0000 C CNN
+F 2 "" H 3250 1050 50  0001 C CNN
+F 3 "" H 3250 1050 50  0001 C CNN
+	1    3250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61C5EF4C
+P 2950 5250
+AR Path="/61C6168C/61C5EF4C" Ref="#PWR?"  Part="1" 
+AR Path="/61CA157A/61C5EF4C" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 2950 5100 50  0001 C CNN
+F 1 "+3V3" H 2950 5400 50  0000 C CNN
+F 2 "" H 2950 5250 50  0001 C CNN
+F 3 "" H 2950 5250 50  0001 C CNN
+	1    2950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61C5E88E
+P 3250 4650
+AR Path="/61C6168C/61C5E88E" Ref="#PWR?"  Part="1" 
+AR Path="/61CA157A/61C5E88E" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 3250 4500 50  0001 C CNN
+F 1 "+3V3" H 3250 4800 50  0000 C CNN
+F 2 "" H 3250 4650 50  0001 C CNN
+F 3 "" H 3250 4650 50  0001 C CNN
+	1    3250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1650 3250 1650
+Wire Wire Line
+	2550 1350 2950 1350
+Wire Wire Line
+	2950 4950 2550 4950
+Entry Wire Line
+	4650 4850 4750 4950
+Wire Wire Line
+	4450 4850 4650 4850
+Text Label 4450 4850 0    50   ~ 0
+~AD~23
+Wire Wire Line
+	3850 4850 3550 4850
+NoConn ~ 3550 5050
+Wire Wire Line
+	2950 5250 3250 5250
+Wire Wire Line
+	2850 4450 2850 4850
+Wire Wire Line
+	2850 4850 2950 4850
+Wire Wire Line
+	3750 4150 3550 4150
+Wire Wire Line
+	3750 4450 2850 4450
+Wire Wire Line
+	3750 4150 3750 4450
+$Comp
+L 74xx:74LS74 U?
+U 2 1 61CB05D3
+P 10550 1500
+AR Path="/61CB05D3" Ref="U?"  Part="1" 
+AR Path="/61CA157A/61CB05D3" Ref="U18"  Part="2" 
+AR Path="/61CD3565/61CB05D3" Ref="U?"  Part="1" 
+F 0 "U18" H 10550 1500 50  0000 C CNN
+F 1 "74LVC74AD" H 10800 1250 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 10550 1500 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 10550 1500 50  0001 C CNN
+	2    10550 1500
+	1    0    0    -1  
+$EndComp
+Text HLabel 2550 4950 0    50   Input ~ 0
+CLK
+Text HLabel 2550 4350 0    50   Input ~ 0
+REG~OE~
+Text HLabel 2550 1650 0    50   Input ~ 0
+~RES~
+Text HLabel 2550 1350 0    50   Input ~ 0
+ROM~WE~
+Text HLabel 4850 1450 2    50   Output ~ 0
+ESP_~EN~
+Text Label 2950 1250 2    50   ~ 0
+~AD~0
+Wire Bus Line
+	4750 3150 4750 4950
+Wire Wire Line
+	2550 6750 2950 6750
+Text Notes 1050 6800 0    50   ~ 0
+Read data available\ninterrupt mask
+Wire Notes Line
+	1000 7200 1900 7200
+Wire Notes Line
+	1000 6300 1900 6300
+$Comp
+L 74xx:74LS74 U?
+U 2 1 61F17BC2
+P 3250 6750
+AR Path="/61F17BC2" Ref="U?"  Part="1" 
+AR Path="/61CA157A/61F17BC2" Ref="U36"  Part="2" 
+AR Path="/61CD3565/61F17BC2" Ref="U?"  Part="1" 
+F 0 "U36" H 3250 6750 50  0000 C CNN
+F 1 "74LVC74AD" H 3500 6500 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 3250 6750 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 3250 6750 50  0001 C CNN
+	2    3250 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61F17BC8
+P 3250 5550
+AR Path="/61C6168C/61F17BC8" Ref="#PWR?"  Part="1" 
+AR Path="/61CA157A/61F17BC8" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 3250 5400 50  0001 C CNN
+F 1 "+3V3" H 3250 5700 50  0000 C CNN
+F 2 "" H 3250 5550 50  0001 C CNN
+F 3 "" H 3250 5550 50  0001 C CNN
+	1    3250 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 6150 3250 6150
+Wire Wire Line
+	2550 5850 2950 5850
+Text Label 2950 5750 2    50   ~ 0
+~AD~1
+$Comp
+L 74xx:74LS74 U?
+U 1 1 61F17BD5
+P 3250 5850
+AR Path="/61F17BD5" Ref="U?"  Part="1" 
+AR Path="/61CA157A/61F17BD5" Ref="U36"  Part="1" 
+AR Path="/61CD3565/61F17BD5" Ref="U?"  Part="1" 
+F 0 "U36" H 3250 5850 50  0000 C CNN
+F 1 "74LVC74AD" H 3500 5600 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 3250 5850 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 3250 5850 50  0001 C CNN
+	1    3250 5850
+	1    0    0    -1  
+$EndComp
+Text Label 2950 6650 2    50   ~ 0
+~AD~2
+Text HLabel 2550 7050 0    50   Input ~ 0
+~RES~
+Wire Wire Line
+	2550 7050 3250 7050
+Text HLabel 2550 6150 0    50   Input ~ 0
+~RES~
+Text HLabel 2550 5850 0    50   Input ~ 0
+ROM~WE~
+Text HLabel 2550 6750 0    50   Input ~ 0
+ROM~WE~
+Wire Wire Line
+	3550 1250 3750 1250
+Wire Wire Line
+	3750 1250 3750 1800
+Wire Wire Line
+	3750 1800 2650 1800
+Wire Wire Line
+	2650 1800 2650 2550
+Wire Wire Line
+	2650 2550 3250 2550
+Wire Wire Line
+	2550 2250 2950 2250
+Text HLabel 2550 2250 0    50   Input ~ 0
+WRCLK
+Text Notes 1050 5900 0    50   ~ 0
+Write data accepted\ninterrupt mask
+$Comp
+L power:+3V3 #PWR?
+U 1 1 62022ED5
+P 3250 6450
+AR Path="/61C6168C/62022ED5" Ref="#PWR?"  Part="1" 
+AR Path="/61CA157A/62022ED5" Ref="#PWR0187"  Part="1" 
+F 0 "#PWR0187" H 3250 6300 50  0001 C CNN
+F 1 "+3V3" H 3250 6600 50  0000 C CNN
+F 2 "" H 3250 6450 50  0001 C CNN
+F 3 "" H 3250 6450 50  0001 C CNN
+	1    3250 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5950 3750 5950
+$Comp
+L Device:R_Small R?
+U 1 1 62031DEB
+P 5550 6250
+AR Path="/64084316/62031DEB" Ref="R?"  Part="1" 
+AR Path="/61CA157A/62031DEB" Ref="R31"  Part="1" 
+F 0 "R31" V 5400 6250 50  0000 C CNN
+F 1 "1k" V 5500 6250 50  0000 C BNN
+F 2 "stdpads:R_0805" H 5550 6250 50  0001 C CNN
+F 3 "~" H 5550 6250 50  0001 C CNN
+F 4 "C25190" H 5550 6250 50  0001 C CNN "LCSC Part"
+	1    5550 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 6250 5950 6250
+$Comp
+L power:GND #PWR?
+U 1 1 62031DF9
+P 5950 6650
+AR Path="/64084316/62031DF9" Ref="#PWR?"  Part="1" 
+AR Path="/61CA157A/62031DF9" Ref="#PWR0189"  Part="1" 
+F 0 "#PWR0189" H 5950 6400 50  0001 C CNN
+F 1 "GND" H 5950 6500 50  0000 C CNN
+F 2 "" H 5950 6650 50  0001 C CNN
+F 3 "" H 5950 6650 50  0001 C CNN
+	1    5950 6650
+	1    0    0    -1  
+$EndComp
+Text HLabel 6050 6250 2    50   Output ~ 0
+~NMRQ~
+Wire Wire Line
+	3550 6850 3750 6850
+$Comp
+L 74xx:74LS02 U22
+U 3 2 62038458
+P 5150 6650
+F 0 "U22" H 5150 6650 50  0000 C CNN
+F 1 "74LVC02AD" H 5150 6850 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 5150 6650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS02" H 5150 6650 50  0001 C CNN
+	3    5150 6650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3550 5750
+NoConn ~ 3550 6650
+Text Label 3850 2350 2    50   ~ 0
+~WRREQ~
+Text Label 3850 2150 2    50   ~ 0
+WRREQ
+Wire Wire Line
+	3850 2150 3550 2150
+Text Label 3850 4150 2    50   ~ 0
+~RDREQ~
+Text HLabel 4850 4150 2    50   Output ~ 0
+~RDREQ~
+Text HLabel 4850 2350 2    50   Output ~ 0
+~WRREQ~
+Text Label 3750 5950 2    50   ~ 0
+WR~IE~
+Text Label 3750 6850 2    50   ~ 0
+RD~IE~
+Wire Wire Line
+	4550 6550 4850 6550
+Wire Wire Line
+	4550 6750 4850 6750
+Text Label 4550 6550 0    50   ~ 0
+WRREQ
+Text Label 4550 6750 0    50   ~ 0
+WR~IE~
+Wire Wire Line
+	5650 6450 5650 6650
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 62031DF3
+P 5850 6450
+AR Path="/64084316/62031DF3" Ref="Q?"  Part="1" 
+AR Path="/61CA157A/62031DF3" Ref="Q5"  Part="1" 
+F 0 "Q5" H 6041 6496 50  0000 L CNN
+F 1 "MMBT3904" H 6041 6405 50  0000 L CNN
+F 2 "stdpads:SOT-23" H 6050 6550 50  0001 C CNN
+F 3 "~" H 5850 6450 50  0001 C CNN
+F 4 "C20526" H 5850 6450 50  0001 C CNN "LCSC Part"
+	1    5850 6450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 6450
+Wire Wire Line
+	5650 6250 5650 6450
+$Comp
+L Device:R_Small R?
+U 1 1 620548CA
+P 5550 6650
+AR Path="/64084316/620548CA" Ref="R?"  Part="1" 
+AR Path="/61CA157A/620548CA" Ref="R32"  Part="1" 
+F 0 "R32" V 5400 6650 50  0000 C CNN
+F 1 "1k" V 5500 6650 50  0000 C BNN
+F 2 "stdpads:R_0805" H 5550 6650 50  0001 C CNN
+F 3 "~" H 5550 6650 50  0001 C CNN
+F 4 "C25190" H 5550 6650 50  0001 C CNN "LCSC Part"
+	1    5550 6650
+	0    1    1    0   
+$EndComp
+Text Label 4550 6350 0    50   ~ 0
+RD~IE~
+Text Label 4550 6150 0    50   ~ 0
+~RDREQ~
+Text Notes 4450 6700 2    50   ~ 0
+write buffer\nempty
+Text Notes 4450 6300 2    50   ~ 0
+read data\navailable
+$Comp
+L 74xx:74LS74 U?
+U 1 1 679639AF
+P 3250 1350
+AR Path="/679639AF" Ref="U?"  Part="1" 
+AR Path="/61CA157A/679639AF" Ref="U35"  Part="1" 
+AR Path="/61CD3565/679639AF" Ref="U?"  Part="1" 
+F 0 "U35" H 3250 1350 50  0000 C CNN
+F 1 "74LVC74AD" H 3500 1100 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 3250 1350 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 3250 1350 50  0001 C CNN
+	1    3250 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 U?
+U 2 1 61CA9D3D
+P 3250 4050
+AR Path="/61CA9D3D" Ref="U?"  Part="1" 
+AR Path="/61CA157A/61CA9D3D" Ref="U19"  Part="2" 
+AR Path="/61CD3565/61CA9D3D" Ref="U?"  Part="1" 
+F 0 "U19" H 3250 4050 50  0000 C CNN
+F 1 "74LVC74AD" H 3500 3800 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 3250 4050 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 3250 4050 50  0001 C CNN
+	2    3250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 U?
+U 1 1 61CA9D2C
+P 3250 2250
+AR Path="/61CA9D2C" Ref="U?"  Part="1" 
+AR Path="/61CA157A/61CA9D2C" Ref="U19"  Part="1" 
+AR Path="/61CD3565/61CA9D2C" Ref="U?"  Part="1" 
+F 0 "U19" H 3250 2250 50  0000 C CNN
+F 1 "74LVC74AD" H 3500 2000 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 3250 2250 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 3250 2250 50  0001 C CNN
+	1    3250 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 3750
+$Comp
+L 74xx:74LS74 U?
+U 1 1 61986FF7
+P 3250 3150
+AR Path="/61986FF7" Ref="U?"  Part="1" 
+AR Path="/61CA157A/61986FF7" Ref="U37"  Part="1" 
+AR Path="/61CD3565/61986FF7" Ref="U?"  Part="1" 
+F 0 "U37" H 3250 3150 50  0000 C CNN
+F 1 "74LVC74AD" H 3500 2900 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 3250 3150 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 3250 3150 50  0001 C CNN
+	1    3250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 U?
+U 2 1 619879D7
+P 3250 4950
+AR Path="/619879D7" Ref="U?"  Part="1" 
+AR Path="/61CA157A/619879D7" Ref="U37"  Part="2" 
+AR Path="/61CD3565/619879D7" Ref="U?"  Part="1" 
+F 0 "U37" H 3250 4950 50  0000 C CNN
+F 1 "74LVC74AD" H 3500 4700 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 3250 4950 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 3250 4950 50  0001 C CNN
+	2    3250 4950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3550 3950
+Wire Wire Line
+	4550 6350 4850 6350
+Wire Wire Line
+	4550 6150 4850 6150
+$Comp
+L 74xx:74LS02 U22
+U 4 2 6204FC23
+P 5150 6250
+F 0 "U22" H 5150 6250 50  0000 C CNN
+F 1 "74LVC02AD" H 5150 6450 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 5150 6250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS02" H 5150 6250 50  0001 C CNN
+	4    5150 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS125 U24
+U 3 1 62013970
+P 4150 4850
+F 0 "U24" H 4100 4850 50  0000 C CNN
+F 1 "74LVC125AD" H 4150 5050 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 4150 4850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 4150 4850 50  0001 C CNN
+	3    4150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS125 U24
+U 4 1 679639CB
+P 4150 3050
+F 0 "U24" H 4100 3050 50  0000 C CNN
+F 1 "74LVC125AD" H 4150 3250 50  0000 C CNN
+F 2 "stdpads:SOIC-14_3.9mm" H 4150 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 4150 3050 50  0001 C CNN
+	4    4150 3050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
