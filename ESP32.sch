@@ -21,6 +21,7 @@ F 0 "U1" H 5650 2050 50  0000 C CNN
 F 1 "ESP-WROVER-32" H 5650 1950 50  0000 C CNN
 F 2 "stdpads:ESP32-WROVER_WROOM-32_WROVER" H 5650 600 50  0001 C CNN
 F 3 "" H 5200 2400 60  0001 C CNN
+F 4 "C967023" H 5650 1950 50  0001 C CNN "LCSC Part"
 	1    5650 1950
 	1    0    0    -1  
 $EndComp
@@ -134,7 +135,7 @@ F 0 "R19" H 2559 4746 50  0000 L CNN
 F 1 "1k" H 2559 4655 50  0000 L CNN
 F 2 "stdpads:R_0805" H 2500 4700 50  0001 C CNN
 F 3 "~" H 2500 4700 50  0001 C CNN
-F 4 "C21190" H 2500 4700 50  0001 C CNN "LCSC Part"
+F 4 "C17513" H 2500 4700 50  0001 C CNN "LCSC Part"
 	1    2500 4700
 	-1   0    0    -1  
 $EndComp
@@ -167,7 +168,7 @@ F 0 "C2" H 2700 5450 50  0000 L CNN
 F 1 "22p" H 2700 5350 50  0000 L CNN
 F 2 "stdpads:C_0805" H 2600 5400 50  0001 C CNN
 F 3 "~" H 2600 5400 50  0001 C CNN
-F 4 "C1653" H 2600 5400 50  0001 C CNN "LCSC Part"
+F 4 "C1804" H 2600 5400 50  0001 C CNN "LCSC Part"
 	1    2600 5400
 	-1   0    0    -1  
 $EndComp
@@ -263,7 +264,7 @@ F 0 "R30" V 4700 4900 50  0000 C CNN
 F 1 "10k" V 4800 4900 50  0000 C BNN
 F 2 "stdpads:R_0805" H 4850 4900 50  0001 C CNN
 F 3 "~" H 4850 4900 50  0001 C CNN
-F 4 "C25804" H 4850 4900 50  0001 C CNN "LCSC Part"
+F 4 "C17414" H 4850 4900 50  0001 C CNN "LCSC Part"
 	1    4850 4900
 	0    -1   1    0   
 $EndComp
@@ -275,7 +276,7 @@ F 0 "R29" V 4700 4400 50  0000 C CNN
 F 1 "10k" V 4800 4400 50  0000 C BNN
 F 2 "stdpads:R_0805" H 4850 4400 50  0001 C CNN
 F 3 "~" H 4850 4400 50  0001 C CNN
-F 4 "C25804" H 4850 4400 50  0001 C CNN "LCSC Part"
+F 4 "C17414" H 4850 4400 50  0001 C CNN "LCSC Part"
 	1    4850 4400
 	0    -1   1    0   
 $EndComp
@@ -335,7 +336,7 @@ F 0 "C1" H 2300 5450 50  0000 L CNN
 F 1 "22p" H 2300 5350 50  0000 L CNN
 F 2 "stdpads:C_0805" H 2200 5400 50  0001 C CNN
 F 3 "~" H 2200 5400 50  0001 C CNN
-F 4 "C1653" H 2200 5400 50  0001 C CNN "LCSC Part"
+F 4 "C1804" H 2200 5400 50  0001 C CNN "LCSC Part"
 	1    2200 5400
 	-1   0    0    -1  
 $EndComp
@@ -361,7 +362,7 @@ F 0 "R15" V 2000 2450 50  0000 C CNN
 F 1 "100" V 2100 2450 50  0000 C BNN
 F 2 "stdpads:R_0805" H 2150 2450 50  0001 C CNN
 F 3 "~" H 2150 2450 50  0001 C CNN
-F 4 "C25190" H 2150 2450 50  0001 C CNN "LCSC Part"
+F 4 "C17408" H 2150 2450 50  0001 C CNN "LCSC Part"
 	1    2150 2450
 	0    -1   1    0   
 $EndComp
@@ -405,6 +406,7 @@ F 0 "J4" H 1600 2950 50  0000 C CNN
 F 1 "JTAG" H 1600 2350 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 1550 2650 50  0001 C CNN
 F 3 "~" H 1550 2650 50  0001 C CNN
+F 4 "C5665" H 1550 2650 50  0001 C CNN "LCSC Part"
 	1    1550 2650
 	1    0    0    -1  
 $EndComp
@@ -445,7 +447,7 @@ F 3 "~" H 2650 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3000 7100 0    50   ~ 0
-IO0: pull-up disables ESP32 serial download\nIO2: pull-down disables ESP32 test mode\nTCK: pull-down prevents JTAG TCK clock pulse at power-on\nTMS: pull-up causes JTAG to reset state if accidental TCK pulse\nTDO: pull up for debug output, down for fast/quiet boot (internal pull-up)\nTDI:  pull up for 1.8V flash, down for 3.3V flash (internal pull-down)
+IO0:         pull-up disables ESP32 serial download\nIO2:         pull-down disables ESP32 test mode\nIO13 (TCK): pull-down prevents JTAG TCK clock pulse at power-on\nIO14 (TMS): pull-up causes JTAG to reset state if accidental TCK pulse\nIO15 (TDO): pull up for debug output, down for fast/quiet boot (internal pull-up)\nIO12 (TDI):  pull up for 1.8V flash, down for 3.3V flash (internal pull-down)
 Connection ~ 2950 7300
 $Comp
 L power:GND #PWR0181
@@ -515,7 +517,7 @@ F 0 "R16" H 2409 6546 50  0000 L CNN
 F 1 "10k" H 2409 6455 50  0000 L CNN
 F 2 "stdpads:R_0805" H 2350 6500 50  0001 C CNN
 F 3 "~" H 2350 6500 50  0001 C CNN
-F 4 "C31850" H 2350 6500 50  0001 C CNN "LCSC Part"
+F 4 "C17414" H 2350 6500 50  0001 C CNN "LCSC Part"
 	1    2350 6500
 	1    0    0    -1  
 $EndComp
@@ -527,7 +529,7 @@ F 0 "R17" H 2409 7246 50  0000 L CNN
 F 1 "1k" H 2409 7155 50  0000 L CNN
 F 2 "stdpads:R_0805" H 2350 7200 50  0001 C CNN
 F 3 "~" H 2350 7200 50  0001 C CNN
-F 4 "C21190" H 2350 7200 50  0001 C CNN "LCSC Part"
+F 4 "C17513" H 2350 7200 50  0001 C CNN "LCSC Part"
 	1    2350 7200
 	1    0    0    -1  
 $EndComp
@@ -543,7 +545,7 @@ F 0 "R14" H 2109 7246 50  0000 L CNN
 F 1 "10k" H 2109 7155 50  0000 L CNN
 F 2 "stdpads:R_0805" H 2050 7200 50  0001 C CNN
 F 3 "~" H 2050 7200 50  0001 C CNN
-F 4 "C31850" H 2050 7200 50  0001 C CNN "LCSC Part"
+F 4 "C17414" H 2050 7200 50  0001 C CNN "LCSC Part"
 	1    2050 7200
 	1    0    0    -1  
 $EndComp
@@ -580,7 +582,7 @@ F 0 "R13" H 2109 6546 50  0000 L CNN
 F 1 "10k" H 2109 6455 50  0000 L CNN
 F 2 "stdpads:R_0805" H 2050 6500 50  0001 C CNN
 F 3 "~" H 2050 6500 50  0001 C CNN
-F 4 "C31850" H 2050 6500 50  0001 C CNN "LCSC Part"
+F 4 "C17414" H 2050 6500 50  0001 C CNN "LCSC Part"
 	1    2050 6500
 	1    0    0    -1  
 $EndComp
@@ -598,6 +600,7 @@ F 0 "R28" H 4309 1496 50  0000 L CNN
 F 1 "10k" H 4309 1405 50  0000 L CNN
 F 2 "stdpads:R_0805" H 4250 1450 50  0001 C CNN
 F 3 "~" H 4250 1450 50  0001 C CNN
+F 4 "C17414" H 4250 1450 50  0001 C CNN "LCSC Part"
 	1    4250 1450
 	-1   0    0    -1  
 $EndComp
@@ -630,6 +633,7 @@ F 0 "C3" H 4342 1696 50  0000 L CNN
 F 1 "100n" H 4342 1605 50  0000 L CNN
 F 2 "stdpads:C_0805" H 4250 1650 50  0001 C CNN
 F 3 "~" H 4250 1650 50  0001 C CNN
+F 4 "C28233" H 4250 1650 50  0001 C CNN "LCSC Part"
 	1    4250 1650
 	-1   0    0    -1  
 $EndComp
@@ -694,7 +698,7 @@ F 0 "R12" V 1100 2750 50  0000 C CNN
 F 1 "100" V 1200 2750 50  0000 C BNN
 F 2 "stdpads:R_0805" H 1250 2750 50  0001 C CNN
 F 3 "~" H 1250 2750 50  0001 C CNN
-F 4 "C25190" H 1250 2750 50  0001 C CNN "LCSC Part"
+F 4 "C17408" H 1250 2750 50  0001 C CNN "LCSC Part"
 	1    1250 2750
 	0    -1   -1   0   
 $EndComp
@@ -704,11 +708,11 @@ Connection ~ 6550 1250
 Text HLabel 6550 2250 2    50   Output ~ 0
 N~CS~
 Text Notes 4400 2650 2    50   ~ 0
-internal weak pulldown on IO12
+internal pulldown on IO12
 Text Notes 4400 2550 2    50   ~ 0
-internal weak pullup on IO14
+internal pullup on IO14, toggles at boot
 Text Notes 4400 2850 2    50   ~ 0
-internal weak pulldown on IO13
+internal pulldown on IO13
 Wire Wire Line
 	4650 2750 4650 2950
 Wire Wire Line
@@ -735,7 +739,7 @@ F 0 "R10" V 3350 1950 50  0000 C CNN
 F 1 "1k" V 3450 1950 50  0000 C BNN
 F 2 "stdpads:R_0805" H 3500 1950 50  0001 C CNN
 F 3 "~" H 3500 1950 50  0001 C CNN
-F 4 "C25190" H 3500 1950 50  0001 C CNN "LCSC Part"
+F 4 "C17513" H 3500 1950 50  0001 C CNN "LCSC Part"
 	1    3500 1950
 	0    -1   1    0   
 $EndComp
@@ -772,7 +776,7 @@ F 0 "R27" H 3259 2096 50  0000 L CNN
 F 1 "1k" H 3259 2005 50  0000 L CNN
 F 2 "stdpads:R_0805" H 3200 2050 50  0001 C CNN
 F 3 "~" H 3200 2050 50  0001 C CNN
-F 4 "C21190" H 3200 2050 50  0001 C CNN "LCSC Part"
+F 4 "C17513" H 3200 2050 50  0001 C CNN "LCSC Part"
 	1    3200 2050
 	1    0    0    -1  
 $EndComp
@@ -803,6 +807,7 @@ F 0 "C31" H 7108 4696 50  0000 R CNN
 F 1 "10u" H 7108 4605 50  0000 R CNN
 F 2 "stdpads:C_0805" H 7200 4650 50  0001 C CNN
 F 3 "~" H 7200 4650 50  0001 C CNN
+F 4 "C15850" H 7200 4650 50  0001 C CNN "LCSC Part"
 	1    7200 4650
 	-1   0    0    -1  
 $EndComp
@@ -816,6 +821,7 @@ F 0 "C32" H 7508 4696 50  0000 R CNN
 F 1 "10u" H 7508 4605 50  0000 R CNN
 F 2 "stdpads:C_0805" H 7600 4650 50  0001 C CNN
 F 3 "~" H 7600 4650 50  0001 C CNN
+F 4 "C15850" H 7600 4650 50  0001 C CNN "LCSC Part"
 	1    7600 4650
 	-1   0    0    -1  
 $EndComp
@@ -829,6 +835,7 @@ F 0 "C33" H 7908 4696 50  0000 R CNN
 F 1 "10u" H 7908 4605 50  0000 R CNN
 F 2 "stdpads:C_0805" H 8000 4650 50  0001 C CNN
 F 3 "~" H 8000 4650 50  0001 C CNN
+F 4 "C15850" H 8000 4650 50  0001 C CNN "LCSC Part"
 	1    8000 4650
 	-1   0    0    -1  
 $EndComp
@@ -851,28 +858,16 @@ Text HLabel 4750 1850 0    50   Input ~ 0
 Wire Wire Line
 	6550 2650 6850 2650
 Text Notes 6900 2550 0    50   ~ 0
-internal weak pulldown on IO4
+internal pulldown on IO4
 Text Notes 6900 2650 0    50   ~ 0
-internal weak pullup on IO0
+internal pullup on IO0, toggles at boot
 Text Notes 6900 2750 0    50   ~ 0
-internal weak pulldown on IO2
+internal pulldown on IO2
 Text Notes 6900 2850 0    50   ~ 0
-internal weak pullup on IO15
+internal pullup on IO15, toggles at boot
 Text Notes 6900 2300 0    50   ~ 0
-internal weak pullup on IO5
+internal pullup on IO5, toggles at boot
 NoConn ~ 4750 1950
-$Comp
-L Device:R_Small R22
-U 1 1 6869399E
-P 4850 5500
-F 0 "R22" V 4700 5500 50  0000 C CNN
-F 1 "1k" V 4800 5500 50  0000 C BNN
-F 2 "stdpads:R_0805" H 4850 5500 50  0001 C CNN
-F 3 "~" H 4850 5500 50  0001 C CNN
-F 4 "C25190" H 4850 5500 50  0001 C CNN "LCSC Part"
-	1    4850 5500
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2200 5100 2600 5100
 Wire Wire Line
@@ -917,7 +912,7 @@ F 0 "R26" V 6800 1850 50  0000 C CNN
 F 1 "22" V 6900 1850 50  0000 C BNN
 F 2 "stdpads:R_0805" H 6950 1850 50  0001 C CNN
 F 3 "~" H 6950 1850 50  0001 C CNN
-F 4 "C25190" H 6950 1850 50  0001 C CNN "LCSC Part"
+F 4 "C17561" H 6950 1850 50  0001 C CNN "LCSC Part"
 	1    6950 1850
 	0    -1   1    0   
 $EndComp
@@ -929,7 +924,7 @@ F 0 "R25" V 6800 1550 50  0000 C CNN
 F 1 "22" V 6900 1550 50  0000 C BNN
 F 2 "stdpads:R_0805" H 6950 1550 50  0001 C CNN
 F 3 "~" H 6950 1550 50  0001 C CNN
-F 4 "C25190" H 6950 1550 50  0001 C CNN "LCSC Part"
+F 4 "C17561" H 6950 1550 50  0001 C CNN "LCSC Part"
 	1    6950 1550
 	0    -1   1    0   
 $EndComp
@@ -945,7 +940,7 @@ F 0 "R33" V 6800 2150 50  0000 C CNN
 F 1 "22" V 6900 2150 50  0000 C BNN
 F 2 "stdpads:R_0805" H 6950 2150 50  0001 C CNN
 F 3 "~" H 6950 2150 50  0001 C CNN
-F 4 "C25190" H 6950 2150 50  0001 C CNN "LCSC Part"
+F 4 "C17561" H 6950 2150 50  0001 C CNN "LCSC Part"
 	1    6950 2150
 	0    -1   1    0   
 $EndComp
@@ -963,6 +958,7 @@ F 0 "C37" H 8308 4696 50  0000 R CNN
 F 1 "10u" H 8308 4605 50  0000 R CNN
 F 2 "stdpads:C_0805" H 8400 4650 50  0001 C CNN
 F 3 "~" H 8400 4650 50  0001 C CNN
+F 4 "C15850" H 8400 4650 50  0001 C CNN "LCSC Part"
 	1    8400 4650
 	-1   0    0    -1  
 $EndComp
@@ -982,4 +978,102 @@ Wire Wire Line
 Wire Wire Line
 	8400 4750 8000 4750
 Connection ~ 8400 4750
+$Comp
+L Device:R_Small R36
+U 1 1 626EB58A
+P 9450 4150
+AR Path="/64084316/626EB58A" Ref="R36"  Part="1" 
+AR Path="/61C6168C/626EB58A" Ref="R?"  Part="1" 
+F 0 "R36" H 9509 4196 50  0000 L CNN
+F 1 "10k" H 9509 4105 50  0000 L CNN
+F 2 "stdpads:R_0805" H 9450 4150 50  0001 C CNN
+F 3 "~" H 9450 4150 50  0001 C CNN
+F 4 "C17414" H 9450 4150 50  0001 C CNN "LCSC Part"
+	1    9450 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 626EB590
+P 9450 3550
+AR Path="/626EB590" Ref="#PWR?"  Part="1" 
+AR Path="/61C6168C/626EB590" Ref="#PWR?"  Part="1" 
+AR Path="/64084316/626EB590" Ref="#PWR0235"  Part="1" 
+F 0 "#PWR0235" H 9450 3400 50  0001 C CNN
+F 1 "+3V3" H 9450 3700 50  0000 C CNN
+F 2 "" H 9450 3550 50  0001 C CNN
+F 3 "" H 9450 3550 50  0001 C CNN
+	1    9450 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3850 9550 3850
+Text HLabel 9550 3750 2    50   Output ~ 0
+N~CS~
+$Comp
+L Device:R_Small R35
+U 1 1 626EDF1A
+P 9450 3650
+AR Path="/64084316/626EDF1A" Ref="R35"  Part="1" 
+AR Path="/61C6168C/626EDF1A" Ref="R?"  Part="1" 
+F 0 "R35" H 9509 3696 50  0000 L CNN
+F 1 "10k" H 9509 3605 50  0000 L CNN
+F 2 "stdpads:R_0805" H 9450 3650 50  0001 C CNN
+F 3 "~" H 9450 3650 50  0001 C CNN
+F 4 "C17414" H 9450 3650 50  0001 C CNN "LCSC Part"
+	1    9450 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 3750 9450 3750
+Text HLabel 9550 3850 2    50   Input ~ 0
+WRCLK
+Text HLabel 9550 3950 2    50   Output ~ 0
+RDCLK
+Wire Wire Line
+	9450 4050 9450 3950
+Wire Wire Line
+	9450 3950 9550 3950
+$Comp
+L power:GND #PWR0236
+U 1 1 6271322C
+P 9450 4250
+F 0 "#PWR0236" H 9450 4000 50  0001 C CNN
+F 1 "GND" H 9450 4100 50  0000 C CNN
+F 2 "" H 9450 4250 50  0001 C CNN
+F 3 "" H 9450 4250 50  0001 C CNN
+	1    9450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R34
+U 1 1 6272457D
+P 9150 3650
+AR Path="/64084316/6272457D" Ref="R34"  Part="1" 
+AR Path="/61C6168C/6272457D" Ref="R?"  Part="1" 
+F 0 "R34" H 9209 3696 50  0000 L CNN
+F 1 "10k" H 9209 3605 50  0000 L CNN
+F 2 "stdpads:R_0805" H 9150 3650 50  0001 C CNN
+F 3 "~" H 9150 3650 50  0001 C CNN
+F 4 "C17414" H 9150 3650 50  0001 C CNN "LCSC Part"
+	1    9150 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3750 9150 3850
+Wire Wire Line
+	9150 3550 9450 3550
+Connection ~ 9450 3550
+$Comp
+L Device:R_Small R22
+U 1 1 62C2CF67
+P 4850 5500
+F 0 "R22" V 4700 5500 50  0000 C CNN
+F 1 "10k" V 4800 5500 50  0000 C BNN
+F 2 "stdpads:R_0805" H 4850 5500 50  0001 C CNN
+F 3 "~" H 4850 5500 50  0001 C CNN
+F 4 "C17414" H 4850 5500 50  0001 C CNN "LCSC Part"
+	1    4850 5500
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC
