@@ -14,6 +14,7 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
+NuBus-ESP32-backups/*
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -27,3 +28,4 @@ cpld/db/GR8RAM.db_info
 cpld/db/GR8RAM.tmw_info
 cpld/GR8RAM.qws
 Documentation/~$4205AManual.docx
+NuBus-ESP32.kicad_prl
