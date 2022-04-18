@@ -1497,7 +1497,7 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small") (at 146.05 107.95 90) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 146.05 107.95 90)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000619a39f8)
     (property "Reference" "R5" (id 0) (at 146.05 111.76 90))
@@ -1517,7 +1517,7 @@
     (pin "2" (uuid 90143f5d-f678-42e2-b631-61aaab1dc473))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 146.05 102.87 90) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 146.05 102.87 90)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000619a4ef8)
     (property "Reference" "R4" (id 0) (at 146.05 101.6 90)
@@ -1539,7 +1539,7 @@
     (pin "2" (uuid 591052a0-f27a-4a65-bab8-3c391145f152))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 146.05 97.79 90) (mirror x) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 146.05 97.79 90) (mirror x)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000619a511f)
     (property "Reference" "R3" (id 0) (at 146.05 93.98 90))
@@ -1559,7 +1559,7 @@
     (pin "2" (uuid 4139e1cf-a85b-400a-9e1b-2bdbd381429c))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 146.05 85.09 90) (mirror x) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 146.05 85.09 90) (mirror x)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000619aa12e)
     (property "Reference" "R1" (id 0) (at 146.05 81.28 90))
@@ -1601,7 +1601,7 @@
     (pin "2" (uuid ffc7539d-4080-44cf-b011-f3b2023c7bdd))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 146.05 90.17 90) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 146.05 90.17 90)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061a919a2)
     (property "Reference" "R2" (id 0) (at 146.05 88.9 90)
@@ -1674,7 +1674,7 @@
     (pin "1" (uuid 56c10cf8-9f0d-4480-b55f-440f00674ab8))
   )
 
-  (symbol (lib_id "power:+5V") (at 175.26 53.34 0) (unit 1)
+  (symbol (lib_id "power:+5V") (at 175.26 53.34 0)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061f52c59)
     (property "Reference" "#PWR0107" (id 0) (at 175.26 57.15 0)
@@ -2610,9 +2610,6 @@
     (path "/00000000-0000-0000-0000-000064084316/00000000-0000-0000-0000-00006271322c"
       (reference "#PWR0236") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000061c6168c/b94db105-61ed-4c93-ac35-cf2b281e0b07"
-      (reference "#PWR0237") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000064084316/00000000-0000-0000-0000-0000641a5d54"
       (reference "C1") (unit 1) (value "22p") (footprint "stdpads:C_0805")
     )
@@ -3038,9 +3035,6 @@
     )
     (path "/00000000-0000-0000-0000-000061d1084d/00000000-0000-0000-0000-00006231a2a7"
       (reference "U22") (unit 1) (value "74LVC02AD") (footprint "stdpads:SOIC-14_3.9mm")
-    )
-    (path "/00000000-0000-0000-0000-000061c6168c/56ed7083-5404-4007-87a4-14f2d1654076"
-      (reference "U22") (unit 2) (value "74LVC02AD") (footprint "stdpads:SOIC-14_3.9mm")
     )
     (path "/00000000-0000-0000-0000-000061ca157a/00000000-0000-0000-0000-000062038458"
       (reference "U22") (unit 3) (value "74LVC02AD") (footprint "stdpads:SOIC-14_3.9mm")
