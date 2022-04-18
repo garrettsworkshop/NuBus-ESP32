@@ -1709,7 +1709,7 @@
     (pin "9" (uuid 009c1248-4064-4238-bd7e-d76cb434483d))
   )
 
-  (symbol (lib_id "power:GND") (at 176.53 92.71 0)
+  (symbol (lib_id "power:GND") (at 176.53 92.71 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061c7bf8f)
     (property "Reference" "#PWR0120" (id 0) (at 176.53 99.06 0)
@@ -1741,7 +1741,7 @@
     (pin "1" (uuid 10c45527-a06b-4eaf-9df3-38f151ab171a))
   )
 
-  (symbol (lib_id "GW_RAM:Flash-512Kx8-PLCC-32") (at 128.27 148.59 0)
+  (symbol (lib_id "GW_RAM:Flash-512Kx8-PLCC-32") (at 128.27 148.59 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061f04107)
     (property "Reference" "U28" (id 0) (at 128.27 121.92 0))
@@ -1789,7 +1789,7 @@
     (pin "9" (uuid a56d5638-888b-4255-a5bc-b8f821369007))
   )
 
-  (symbol (lib_id "power:GND") (at 138.43 171.45 0)
+  (symbol (lib_id "power:GND") (at 138.43 171.45 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061f0410d)
     (property "Reference" "#PWR0190" (id 0) (at 138.43 177.8 0)
@@ -1805,7 +1805,7 @@
     (pin "1" (uuid 06abcc69-0fd4-44be-bb8e-c50079527762))
   )
 
-  (symbol (lib_id "power:+5V") (at 138.43 125.73 0)
+  (symbol (lib_id "power:+5V") (at 138.43 125.73 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061f04113)
     (property "Reference" "#PWR0191" (id 0) (at 138.43 129.54 0)
@@ -1821,7 +1821,7 @@
     (pin "1" (uuid b6a9e515-4c4e-442a-83e6-3544a5b6ea88))
   )
 
-  (symbol (lib_id "power:GND") (at 140.97 154.94 0)
+  (symbol (lib_id "power:GND") (at 140.97 154.94 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061f04143)
     (property "Reference" "#PWR0192" (id 0) (at 140.97 161.29 0)
@@ -1837,7 +1837,7 @@
     (pin "1" (uuid 01a3bb6a-196c-4b70-a9c8-57f99a865c46))
   )
 
-  (symbol (lib_id "power:+3V3") (at 191.77 124.46 0) (mirror y)
+  (symbol (lib_id "power:+3V3") (at 191.77 124.46 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000620e4245)
     (property "Reference" "#PWR0193" (id 0) (at 191.77 128.27 0)
@@ -1853,7 +1853,7 @@
     (pin "1" (uuid 1f16bff9-8bc8-4596-9cda-9bb67599e7b8))
   )
 
-  (symbol (lib_id "Device:C_Small") (at 181.61 127 0) (mirror y)
+  (symbol (lib_id "Device:C_Small") (at 181.61 127 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000620e4251)
     (property "Reference" "C17" (id 0) (at 183.9468 125.8316 0)
@@ -1875,7 +1875,7 @@
     (pin "2" (uuid aed7f502-facf-4df1-ae88-3d7d42c3e576))
   )
 
-  (symbol (lib_id "Device:C_Small") (at 171.45 127 0) (mirror y)
+  (symbol (lib_id "Device:C_Small") (at 171.45 127 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000620e4257)
     (property "Reference" "C16" (id 0) (at 173.7868 125.8316 0)
@@ -1897,7 +1897,7 @@
     (pin "2" (uuid be0120ab-de2e-4f1e-8bb2-227029554cc1))
   )
 
-  (symbol (lib_id "power:GND") (at 191.77 129.54 0)
+  (symbol (lib_id "power:GND") (at 191.77 129.54 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000620e425d)
     (property "Reference" "#PWR0194" (id 0) (at 191.77 135.89 0)
@@ -1913,7 +1913,7 @@
     (pin "1" (uuid bd9c974c-0fb9-4497-8bff-6a0815b58164))
   )
 
-  (symbol (lib_id "Device:C_Small") (at 191.77 127 0) (mirror y)
+  (symbol (lib_id "Device:C_Small") (at 191.77 127 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000620e4263)
     (property "Reference" "C18" (id 0) (at 194.1068 125.8316 0)
@@ -1935,7 +1935,7 @@
     (pin "2" (uuid 3589a2d8-50f4-4e6a-bb3a-c05c474e3054))
   )
 
-  (symbol (lib_id "power:+5V") (at 171.45 124.46 0)
+  (symbol (lib_id "power:+5V") (at 171.45 124.46 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000620e42a7)
     (property "Reference" "#PWR0195" (id 0) (at 171.45 128.27 0)
@@ -1951,7 +1951,7 @@
     (pin "1" (uuid 83c27b41-a4ec-4d61-abdb-4bce0e01512b))
   )
 
-  (symbol (lib_id "GW_RAM:Flash-512Kx8-PLCC-32") (at 128.27 92.71 0)
+  (symbol (lib_id "GW_RAM:Flash-512Kx8-PLCC-32") (at 128.27 92.71 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000624663a6)
     (property "Reference" "U2" (id 0) (at 128.27 66.04 0))
@@ -1999,7 +1999,7 @@
     (pin "9" (uuid 4b4046ec-1657-4990-af28-25bfe0a81231))
   )
 
-  (symbol (lib_id "power:GND") (at 138.43 115.57 0)
+  (symbol (lib_id "power:GND") (at 138.43 115.57 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000624663c1)
     (property "Reference" "#PWR0117" (id 0) (at 138.43 121.92 0)
@@ -2015,7 +2015,7 @@
     (pin "1" (uuid 5ad4bc41-6b90-463a-b54d-f0afed35cb3b))
   )
 
-  (symbol (lib_id "power:+5V") (at 138.43 69.85 0)
+  (symbol (lib_id "power:+5V") (at 138.43 69.85 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000624663c7)
     (property "Reference" "#PWR0118" (id 0) (at 138.43 73.66 0)
@@ -2031,7 +2031,7 @@
     (pin "1" (uuid b71d7c0c-831d-4118-bbda-e2700977cedf))
   )
 
-  (symbol (lib_id "power:GND") (at 140.97 99.06 0)
+  (symbol (lib_id "power:GND") (at 140.97 99.06 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000624663cd)
     (property "Reference" "#PWR0119" (id 0) (at 140.97 105.41 0)
