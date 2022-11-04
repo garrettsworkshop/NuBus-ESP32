@@ -435,7 +435,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "Documentation/",
+    "plot_directory": "",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -451,20 +451,28 @@
       "NuBus"
     ],
     [
+      "00000000-0000-0000-0000-000061c6168c",
+      "DataReg"
+    ],
+    [
+      "00000000-0000-0000-0000-000061ca157a",
+      "CtrlStatReg"
+    ],
+    [
+      "00000000-0000-0000-0000-000061c8b24a",
+      "AddrLatch"
+    ],
+    [
+      "00000000-0000-0000-0000-000062454aa9",
+      "ROM"
+    ],
+    [
+      "00000000-0000-0000-0000-000061d1084d",
+      "BusControl"
+    ],
+    [
       "00000000-0000-0000-0000-000064084316",
       "ESP32"
-    ],
-    [
-      "94ac7780-0685-439d-b172-68fab709ddcd",
-      "Buf"
-    ],
-    [
-      "d700d1df-4ad1-4fd5-bfab-e16f93b70844",
-      "FPGA"
-    ],
-    [
-      "dc099e97-2f29-44bb-8704-6a571f569144",
-      "ROM"
     ]
   ],
   "text_variables": {}
